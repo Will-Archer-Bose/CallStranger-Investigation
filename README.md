@@ -9,6 +9,7 @@ Background Materials:
 There is an upper limit to the size of the callbackURL, the device needs to store the entire thing and if it can't the SUBSCRIBE request will be rejected.  To test what the upper limit is on a specific device, I slightly modified the `CallStranger.py` and `CallDirect.py` filed from @yunuscadirci's repo.  Specifically, additional command line arguments that will add length to the callbackURL.
 
 ### Examples:
+##### CallStranger.py
 > original implementation
 ```
 $ python3 CallStranger.py
@@ -22,6 +23,8 @@ $ python3 CallStranger.py 4096
 $ python3 CallStranger.py 4096 5
 ```
 _______________________
+##### CallDirect.py
+*you will be able to see the xml file names for individual devices printed to the console if you run CallStranger.py first*
 > original implementation
 ```
 $ python3 CallDirect.py http://1.2.3.4:5678/file_path.xml
